@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"],
+    "baseUrl": "./src",
+    "paths": {
+      "@store/*": ["store/*"],
+      "@utils/*": ["utils/*"],
+      "@router/*": ["router/*"],
+      "@pages/*": ["pages/*"],
+      "@layout/*": ["layout/*"],
+      "@components/*": ["components/*"]
+    }
+  },
+  "include": ["src", ".prettierrc.cjs", ".eslintrc.cjs"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
